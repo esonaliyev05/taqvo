@@ -1,0 +1,377 @@
+.nav {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 30px;
+  z-index: 10;
+  overflow: hidden;
+
+  .container {
+    width: 1160px;
+    height: 59.5px;
+    border-radius: 30px;
+    margin: 0 auto;
+    background: #441118a1;
+    backdrop-filter: blur(9px);
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        width: auto;
+      display: flex;
+      gap: 20px;
+
+      li {
+        font-family: Montserrat Alternates, Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        a{
+            color: white;
+
+        }
+      }
+    }
+
+    .logo{
+        width: 90px;
+        height: 30px;
+
+        img{
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+    .concat{
+        width: auto;
+        display: flex;
+        gap: 25px;
+
+        select{
+           width: auto;
+           font-size: 15px;
+           outline: none;
+           background: none;
+           color: white;
+
+
+           option{
+            width: 60px;
+            height: 40px;
+            color: black;
+           }
+        }
+        button{
+            padding: 10px 45px;
+            border-radius: 20px;
+            border: none;
+            color: white;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            background: #A78861;
+
+
+        }
+        .bars{
+          display: none;
+        }
+
+    }
+
+  
+  }
+
+    .bars-open{
+      width: 300px;
+      height: 780px;
+      background: #F0DFDC;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 10;
+      transition: all 0.4s ease-in-out;
+      padding: 25px;
+
+      .edit{
+        position: absolute;
+        right: 10%;
+        top: 3%;
+        font-size: 28px;
+        color: #9B1E1E;
+
+      }
+
+      .bars-parent{
+         
+        width: 100%;
+        height: auto;
+        margin: 40px 0;
+      
+
+      .logo{
+        width: 150px;
+
+        img{
+          width: 100%;
+        }
+      }
+
+      ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+         li{
+          font-family: Montserrat Alternates, Arial, sans-serif;
+          font-weight: 500;
+          margin: 10px 0;
+
+          a{
+            color: #9B1E1E;
+          }
+         }
+
+        
+      }
+
+      .traslation{
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 20px;
+      
+
+        .laguech{
+          width: 90px;
+          height: 45px;
+          border-radius: 20px;
+          border: 2px solid #9B1E1E;
+          color: #9B1E1E;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          font-family: Montserrat Alternates, Arial, sans-serif;
+          font-size: 16px;
+          font-weight: 600;
+
+          &:active{
+            background: #f5d3cc;
+          }
+        }
+      }
+    }
+
+      &.activ{
+        right: 0;
+      }
+    }
+
+}
+@media screen and (max-width: 447px){
+   
+  .nav{
+    width: 100%;
+    height: auto;
+
+    .container{
+      width: 90%;
+      height: 44px;
+      
+      ul{
+        display: none;
+      }
+      .concat{
+        select , button{
+          display: none;
+        }
+
+        .bars{
+          font-size: 25px;
+          color: white;
+          font-weight: 100;
+          display: flex;
+
+        }
+      }
+      
+
+    }
+  }
+
+  
+}
+@media screen and (min-width: 447px) and (max-width: 769px) {
+  .nav{
+    width: 100%;
+    height: auto;
+
+    .container{
+      width: 80%;
+      height: 44px;
+      
+      ul{
+        display: none;
+      }
+      .concat{
+        select , button{
+          display: none;
+        }
+
+        .bars{
+          font-size: 25px;
+          color: white;
+          font-weight: 100;
+          display: flex;
+
+        }
+      }
+      
+
+    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 960px) {
+  .nav{
+    width: 100%;
+    height: auto;
+
+    .container{
+      width: 620px;
+      height: 44px;
+      
+      ul{
+        display: none;
+      }
+      .concat{
+        select , button{
+          display: none;
+        }
+
+        .bars{
+          font-size: 25px;
+          color: white;
+          font-weight: 100;
+          display: flex;
+
+        }
+      }
+      
+
+    }
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1160px) {
+  .nav {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 30px;
+    z-index: 10;
+    overflow: hidden;
+  
+    .container {
+      width: 90%;
+      height: 59.5px;
+      border-radius: 30px;
+      margin: 0 auto;
+      background: #441118a1;
+      backdrop-filter: blur(9px);
+      padding: 10px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      ul {
+          width: auto;
+        display: flex;
+        gap: 20px;
+  
+        li {
+          font-family: Montserrat Alternates, Arial, sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 27px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+  
+          a{
+              color: white;
+  
+          }
+        }
+      }
+  
+      .logo{
+          width: 90px;
+          height: 30px;
+  
+          img{
+              width: 100%;
+              height: 100%;
+  
+          }
+      }
+      .concat{
+          width: auto;
+          display: flex;
+          gap: 25px;
+  
+          select{
+             width: auto;
+             font-size: 15px;
+             outline: none;
+             background: none;
+             color: white;
+  
+  
+             option{
+              width: 60px;
+              height: 40px;
+              color: black;
+             }
+          }
+          button{
+              padding: 10px 45px;
+              border-radius: 20px;
+              border: none;
+              color: white;
+              font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+              background: #A78861;
+  
+  
+          }
+          .bars{
+            display: none;
+          }
+  
+      }
+  
+    
+    }
+  
+    
+      .bars-open{
+        width: 300px;
+        height: 780px;
+        background: white;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        transition: all 0.3s ease-in;
+  
+        &.activ{
+          right: 0;
+        }
+      }
+  
+  }
+}

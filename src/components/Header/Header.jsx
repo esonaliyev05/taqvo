@@ -17,7 +17,9 @@ const Header = () => {
 
   const handleClose = () => setOpen(false);
   const handleOpen = () => setOpen(true);
-
+  const handler = () => {
+    e.target.preventDefault()
+  }
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -174,7 +176,7 @@ const Header = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                 ></textarea>
-                <button type="submit">Yuborish</button>
+                <button type="submit" onClick={handler}>Yuborish</button>
               </form>
               {status && <p style={{ color: "red" }}>{status}</p>}
             </div>

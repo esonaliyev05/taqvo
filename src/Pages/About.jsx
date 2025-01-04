@@ -1,10 +1,9 @@
 import React from 'react'
-import Header from '../components/Header/Header'
-
+import Aboutmain from '../components/Aboutmain/Aboutmain'
 const About = () => {
   return (
     <div>
-      {/* <Header/> */}
+    <Aboutmain/>
     </div>
   )
 }

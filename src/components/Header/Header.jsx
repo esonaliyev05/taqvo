@@ -4,12 +4,10 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 const Header = () => {
   const [open, setOpen] = useState(false); // Ochiq/yopiq holatni boshqarish
 
-  // handleClose funksiyasi
   const handleClose = () => {
     setOpen(false); // Modalni yopish uchun holatni yangilaydi
   };
 
-  // Modalni ochish uchun funksiya (optional)
   const handleOpen = () => {
     setOpen(true); // Modalni ochish uchun holatni yangilaydi
   };

@@ -85,12 +85,12 @@ const Header = () => {
         <div className="rfm-marquee-container">
           <div className="rfm-marquee">
             <div className="rfm-child">
-              <div className="oswald"></div>
+              <div className="oswald">Tabiiy mahsulotlar! Sifat va ishonch!</div>
             </div>
           </div>
           <div className="rfm-marquee">
             <div className="rfm-child">
-              <div className="oswald"></div>
+              <div className="oswald">Tabiiy mahsulotlar! Sifat va ishonch!</div>
             </div>
           </div>
         </div>

@@ -2,8 +2,7 @@ import React from "react";
 import "./Aboutmain.scss";
 import { GoArrowLeft } from "react-icons/go";
 import { NavLink } from "react-router-dom";
-import { BsInstagram } from "react-icons/bs";
-import { TbBrandTelegram } from "react-icons/tb";
+
 
 const Aboutmain = () => {
   return (
@@ -95,6 +94,9 @@ const Aboutmain = () => {
               </div>
 
               <div className="countres">
+
+                 <h1>BIZNING SERTIFIKATLARIMIZ</h1>
+
                 <div className="boxses">
                 
                   <div className="box">
@@ -111,18 +113,7 @@ const Aboutmain = () => {
                   </div>
                 </div>
                 
-                 <div className="countres-end">
-                         
-                         <p>Siz izlagan ta'm, sifat, poklik va o‘zgachalik... Barchasi bir nuqtada jamlanib, “Aqvo”'ga aylanadi!</p>
-
-                         <div className="icon">
-                            <a href=""><BsInstagram/></a>
-                            <a href=""><TbBrandTelegram/></a>
-                         </div>
-                         
-                         <p>© Barcha huquqlar himoyalangan</p>
-
-                 </div>
+               
 
               </div>
             </div>

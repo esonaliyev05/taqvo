@@ -2,7 +2,6 @@ $main-bg-color: #991b1b;
 $text-color: rgb(254, 202, 202);
 $icon-size: 30px;
 
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 .about {
@@ -26,7 +25,6 @@ $icon-size: 30px;
       margin-top: 150px;
 
       .text_aqvo_end {
-        
         .aqvo_top {
           .icon {
             position: absolute;
@@ -60,202 +58,352 @@ $icon-size: 30px;
           .end-img {
             width: 533px;
             height: 402px;
-            
 
             img {
               width: 100%;
               height: 100%;
-              border-radius: 20px;  
-
-
+              border-radius: 20px;
             }
           }
 
           .end_text {
             width: 580px;
 
-            
-            h1{
+            h1 {
               font-family: Montserrat Alternates, Arial, sans-serif;
               letter-spacing: 2px;
               font-size: 24px;
               color: white;
               line-height: 35px;
 
-
-              span{    
+              span {
                 display: block;
                 font-weight: 600;
                 --tw-text-opacity: 1;
                 color: rgb(209 171 125 / var(--tw-text-opacity, 1));
               }
-
             }
 
-            p{
+            p {
               color: white;
               font-size: 17px;
               font-family: Montserrat Alternates, Arial, sans-serif;
               line-height: 20px;
               letter-spacing: 1.5px;
               margin: 20px 0;
-
-
             }
-
-
           }
         }
-        
-        .aqvo_old{
+
+        .aqvo_old {
           width: 100%;
           height: auto;
           display: flex;
           justify-content: space-between;
 
-            
-            
-          .old_text{
+          .old_text {
             width: 580px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             padding: 15px 0;
 
-            h1{
+            h1 {
               font-family: Montserrat Alternates, Arial, sans-serif;
               letter-spacing: 2px;
               font-size: 24px;
               color: white;
               line-height: 35px;
 
-
-              span{    
+              span {
                 display: block;
                 font-weight: 600;
                 --tw-text-opacity: 1;
                 color: rgb(209 171 125 / var(--tw-text-opacity, 1));
               }
-
             }
 
-            p{
+            p {
               color: white;
               font-size: 17px;
               font-family: Montserrat Alternates, Arial, sans-serif;
               line-height: 20px;
               letter-spacing: 1.5px;
               margin: 20px 0;
-
-
             }
-
           }
-          .old_img{
+          .old_img {
             width: 533px;
 
-            img{
+            img {
               width: 100%;
-            height: 402px;
+              height: 402px;
               border-radius: 20px;
             }
           }
-
         }
-
       }
-      
-      .text_aqvo_old{
+
+      .text_aqvo_old {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
 
-        .img-full{
+        .img-full {
           width: 100%;
           height: auto;
           margin: 40px 0;
-           
 
-          img{
+          img {
             width: 100%;
             border-radius: 20px;
-
           }
-          p{
+          p {
             color: white;
             font-size: 17px;
             font-family: Montserrat Alternates, Arial, sans-serif;
             line-height: 20px;
             letter-spacing: 1.5px;
             margin: 20px 0;
-
-
           }
-
-
-
         }
 
-        .countres{
+        .countres {
           width: 100%;
           height: auto;
           display: flex;
           flex-direction: column;
-          
-          .boxses{
+
+          h1{
+            color: #D0AA7D;
+            font-family: Montserrat Alternates, Arial, sans-serif;
+            text-align: center;
+
+          }
+
+          .boxses {
             width: 100%;
             height: auto;
             display: flex;
             gap: 25px;
 
-            .box{
+            .box {
               width: 280px;
               height: 380px;
 
-              img{
+              img {
                 width: 100%;
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 447px) {
+  .about {
+    width: 100%;
+    height: auto;
+    background: $main-bg-color;
 
-          .countres-end{
-            width: 100%;
-            height: 250px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+    .container {
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      padding: 0 25px;
+      position: relative;
+      // top: 150px;
+      overflow: hidden;
 
+      .about_text_parent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
 
-            p{
-              width: 470px;
-              color: white;
-              font-size: 16px;
-              font-family: Montserrat Alternates, Arial, sans-serif;
-              line-height: 20px;
-              letter-spacing: 1px;
-              margin: 20px 0;
-  
+        .text_aqvo_end {
+          .aqvo_top {
+            .icon {
+              position: absolute;
+              left: 20px;
+              display: flex;
+
+              a {
+                color: white;
+                font-size: 25px;
+              }
             }
 
-            .icon{
-              display: flex;
-              gap: 25px;
-              
-              a{
-                color: white;
-                font-size: 30px;
+            .aqvo_h1 {
+              text-align: center;
+
+              h1 {
+                color: $text-color;
+                font-family: Oswald, Arial, sans-serif;
+                font-size: 1.35rem;
               }
             }
           }
 
+          .aqvo_end {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 55px 0;
+
+            .end-img {
+              width: 533px;
+              height: 200px;
+
+              img {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+              }
+            }
+
+            .end_text {
+              width: 580px;
+              margin: 25px 0;
+
+              h1 {
+                font-family: Montserrat Alternates, Arial, sans-serif;
+                letter-spacing: 2px;
+                font-size: 22px;
+                color: white;
+                line-height: 25px;
+                font-weight: 550px;
+
+                span {
+                  display: block;
+                  font-weight: 600;
+                  --tw-text-opacity: 1;
+                  color: rgb(209 171 125 / var(--tw-text-opacity, 1));
+                }
+              }
+
+              p {
+                color: white;
+                font-size: 16px;
+                font-family: Montserrat Alternates, Arial, sans-serif;
+                line-height: 20px;
+                letter-spacing: 1.5px;
+                margin: 20px 0;
+              }
+            }
+          }
+
+          .aqvo_old {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .old_text {
+              width: 580px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              padding: 15px 0;
+
+              h1 {
+                font-family: Montserrat Alternates, Arial, sans-serif;
+                letter-spacing: 2px;
+                font-size: 24px;
+                color: white;
+                line-height: 35px;
+
+                span {
+                  display: block;
+                  font-weight: 600;
+                  --tw-text-opacity: 1;
+                  color: rgb(209 171 125 / var(--tw-text-opacity, 1));
+                }
+              }
+
+              p {
+                color: white;
+                font-size: 16px;
+                font-family: Montserrat Alternates, Arial, sans-serif;
+                line-height: 20px;
+                letter-spacing: 1.5px;
+                margin: 20px 0;
+              }
+            }
+            .old_img {
+              width: 533px;
+
+              img {
+                width: 100%;
+                height: 202px;
+                border-radius: 20px;
+              }
+            }
+          }
         }
-        
 
+        .text_aqvo_old {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+
+          .img-full {
+            width: 100%;
+            height: auto;
+            margin: 40px 0;
+
+            img {
+              width: 100%;
+              border-radius: 20px;
+            }
+            p {
+              color: white;
+              font-size: 17px;
+              font-family: Montserrat Alternates, Arial, sans-serif;
+              line-height: 20px;
+              letter-spacing: 1.5px;
+              margin: 20px 0;
+            }
+          }
+
+          .countres {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+            h1{
+              font-size: 25px;
+              text-align: start;
+              padding: 10px 0;
+
+            }
+
+            .boxses {
+              width: 100%;
+              height: auto;
+              display: flex;
+              gap: 25px;
+              flex-wrap: wrap;
+
+              .box {
+                width: 280px;
+                height: 380px;
+
+                img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
       }
-
     }
   }
 }

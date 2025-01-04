@@ -43,7 +43,7 @@ const Header = () => {
           <div className="concat" onClick={() => setOpen(true)}>
             <div className="concat-parent">
               <div className="concat-img">
-                <img src="public/Header/logo-BftKQ4bE.png" alt="" />
+                <img src="/Header/logo-BftKQ4bE.png" alt="" />
               </div>
 
               <div className="concat-text">
@@ -77,7 +77,7 @@ const Header = () => {
         </div>
       </div>
       <div className="header-full">
-        <img src="public/Header/about-BdVU6kTM.jpg" alt="" />
+        <img src="/Header/about-BdVU6kTM.jpg" alt="" />
       </div>
     </div>
   );

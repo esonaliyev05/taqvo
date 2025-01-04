@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Header.scss";
+import Marquee from "react-fast-marquee";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const Header = () => {
@@ -18,8 +19,8 @@ const Header = () => {
   const handleClose = () => setOpen(false);
   const handleOpen = () => setOpen(true);
   const handler = () => {
-    e.target.preventDefault()
-  }
+    e.target.preventDefault();
+  };
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -31,7 +32,7 @@ const Header = () => {
     const { name, phone, service } = formData;
 
     if (!name || !phone || !service) {
-      alert("Iltimos, barcha majburiy maydonlarni to‘ldiring!")
+      alert("Iltimos, barcha majburiy maydonlarni to‘ldiring!");
       // setStatus();
       return;
     }
@@ -81,22 +82,15 @@ const Header = () => {
 
   return (
     <div className="header">
-      <div className="marquee-wrapper">
-        <div className="rfm-marquee-container">
-          <div className="rfm-marquee">
-            <div className="rfm-child">
-              <div className="oswald">Tabiiy mahsulotlar! Sifat va ishonch!</div>
-            </div>
-          </div>
-          <div className="rfm-marquee">
-            <div className="rfm-child">
-              <div className="oswald">Tabiiy mahsulotlar! Sifat va ishonch!</div>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       <div className="container">
+
+      <Marquee className="Marque">
+         <h1>Tabiiy mahsulotlar! Sifat va ishonch! Tabiiy mahsulotlar! Sifat va ishonch!</h1>
+        </Marquee>
+
+
         <div className="header-parent">
           <div className="text">
             <p>
@@ -176,7 +170,9 @@ const Header = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                 ></textarea>
-                <button type="submit" onClick={handler}>Yuborish</button>
+                <button type="submit" onClick={handler}>
+                  Yuborish
+                </button>
               </form>
               {status && <p style={{ color: "red" }}>{status}</p>}
             </div>

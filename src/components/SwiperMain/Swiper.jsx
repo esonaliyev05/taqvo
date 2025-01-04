@@ -14,7 +14,7 @@ import { Pagination } from "swiper/modules";
 export default function App() {
   return (
     <>
-      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+      <Swiper pagination={true} loop={true} modules={[Pagination]} className="mySwiper">
         <SwiperSlide className="swiper">
           <div className="swiper-parent">
             <img src="Swiper/Background.png" alt="" />

@@ -17,7 +17,7 @@ export default function App() {
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
         <SwiperSlide className="swiper">
           <div className="swiper-parent">
-            <img src="./public/Swiper/Background.png" alt="" />
+            <img src="Swiper/Background.png" alt="" />
             <div className="text">
               <h1>Aqvo brendi haqida</h1>
               <p>
@@ -33,7 +33,7 @@ export default function App() {
         </SwiperSlide>
         <SwiperSlide className="swiper">
           <div className="swiper-parent">
-            <img src="./public/Swiper/Background.png" alt="" />
+            <img src="Swiper/Background.png" alt="" />
             <div className="text">
               <h1>Mahsulot turlari</h1>
               <p>
@@ -48,7 +48,7 @@ export default function App() {
         </SwiperSlide>
         <SwiperSlide className="swiper">
           <div className="swiper-parent">
-            <img src="./public/Swiper/Background.png" alt="" />
+            <img src="Swiper/Background.png" alt="" />
             <div className="text">
               <h1>Yetkazib berish ko‘lami</h1>
               <p>Aqvo brendi o‘z mahsulotlarini keng hududlarga yetkazib berishni tashkil etib, sifat va tezkorlikni birinchi o‘ringa qo‘yadi. Bizning yetkazib berish tarmog‘imiz orqali mahsulotlar O‘zbekistonning barcha hududlariga o‘z vaqtida yetib boradi. Aqvo – har doim sizga yaqin, har doim ishonchli.</p>

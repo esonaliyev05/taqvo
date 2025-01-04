@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa6";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
 
-const Navbar = () => {
+const Navbar = ({ handleOpen }) => {
   const [bars , setBars] = useState(false)
 
   return (
@@ -28,7 +28,7 @@ const Navbar = () => {
                 <option value="">ENG</option>
 
                 </select>
-                <button > Bog'lanish</button>
+                <button onClick={handleOpen}> Bog'lanish</button>
 
                 <FaBars className='bars' onClick={() => setBars(true)}/>
 

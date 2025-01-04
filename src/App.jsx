@@ -12,16 +12,14 @@ function App() {
     setSidebarOpen(!isSidebarOpen);
   };
 
-  const [open, setOpen] = useState(false); // Ochiq/yopiq holatni boshqarish
+  const [open, setOpen] = useState(false); 
 
-  // handleClose funksiyasi
   const handleClose = () => {
-    setOpen(false); // Modalni yopish uchun holatni yangilaydi
+    setOpen(false); 
   };
 
-  // Modalni ochish uchun funksiya (optional)
   const handleOpen = () => {
-    setOpen(true); // Modalni ochish uchun holatni yangilaydi
+    setOpen(true); 
   };
   return (
     <>

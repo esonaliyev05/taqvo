@@ -1,0 +1,130 @@
+.Open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Boshlang‘ich holatda shaffof */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Ko‘rinmas holat */
+    pointer-events: none; /* Faol bo‘lmagan */
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+  
+    &.activ {
+      background: rgba(0, 0, 0, 0.5); /* Qoraygan orqa fon */
+      opacity: 1; /* Ko‘rinadigan holat */
+      pointer-events: auto; /* Faol bo‘ladi */
+    }
+  
+    .open-chiled {
+      width: 507px;
+      height: 488px;
+      --tw-bg-opacity: 1;
+      background-color: rgb(153 27 27 / var(--tw-bg-opacity, 1));
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.1s ease-in-out;
+      overflow: hidden;
+      --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      --tw-shadow-color: #fca5a5;
+      --tw-shadow: var(--tw-shadow-colored);
+      position: relative;
+      padding: 10px;
+
+      .edit{
+        color: white;
+        position: absolute;
+        right: 3%;
+        top: 3%;
+        font-size: 18px;
+
+        &:active{
+          transform: scale(1.1);
+        }
+      }
+
+      form{
+        width: 100%;
+        display: flex;
+        padding: 10px 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // flex-direction: column;
+        
+
+        input{
+          width: 48%;
+          height: 45px;
+          background: none;
+          color: #fff;
+          border: none;
+          border-bottom: 2px solid white;
+          outline: none;
+          font-size: 18px;
+          margin: 25px auto auto auto;
+          font-family: Montserrat Alternates, Arial, sans-serif;
+
+          &::placeholder{
+            color: #fff;
+          }
+
+        }
+        select{
+          width: 48%;
+          height: 45px;
+          background: none;
+          color: white;
+          outline: none;
+          border: none;
+          border-bottom: 2px solid white;
+          margin: 25px auto auto auto;
+          font-size: 18px;
+
+
+          option{
+            color: black;
+          }
+        }
+        textarea{
+          width: 98%;
+          height: 120px;
+          margin: 25px auto;
+          background: none;
+          border: 2px solid white;
+          outline: none;
+          border-radius: 6px;
+          padding: 15px;
+          color: white;
+          font-size: 16px;
+
+          &::placeholder{
+            color: white;
+          }
+
+        }
+        button{
+          width: 98%;
+          height: 45px;
+          border-radius: 8px;
+          margin: 10px auto auto auto;
+          border: none;
+          background: #D0721F;
+          color: white;
+          font-family: Montserrat Alternates, Arial, sans-serif;
+          font-size: 18px;
+          
+        }
+
+      }
+
+      .activ & {
+        width: 400px; /* Faollashganda kengligi */
+        height: 400px; /* Faollashganda balandligi */
+      }
+    }
+  }
+  

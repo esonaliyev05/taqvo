@@ -23,7 +23,7 @@ const Aboutmain = () => {
               </div>
               <div className="aqvo_end">
                 <div className="end-img">
-                  <img src="public/About/about1-BsQ34AeK.jpg" alt="" />
+                  <img src="/About/about1-BsQ34AeK.jpg" alt="" />
                 </div>
                 <div className="end_text">
                   <h1>
@@ -68,14 +68,14 @@ const Aboutmain = () => {
                   </p>
                 </div>
                 <div className="old_img">
-                  <img src="public/About/about2-CmcAd6HZ.jpg" alt="" />
+                  <img src="About/about2-CmcAd6HZ.jpg" alt="" />
                 </div>
               </div>
             </div>
 
             <div className="text_aqvo_old">
               <div className="img-full">
-                <img src="public/Header/about-BdVU6kTM.jpg" alt="" />
+                <img src="/Header/about-BdVU6kTM.jpg" alt="" />
                 <p>
                   AQVO brendi, jiz mahsulotlarini yangicha ta’m va zamonaviy
                   qadoq dizayni bilan taqdim etadi. Mahsulotlarimiz yuqori
@@ -100,16 +100,16 @@ const Aboutmain = () => {
                 <div className="boxses">
                 
                   <div className="box">
-                    <img src="public/About/sertifikat-BmzS-eGb.png" alt="" />
+                    <img src="/About/sertifikat-BmzS-eGb.png" alt="" />
                   </div>
                   <div className="box">
-                    <img src="public/About/sertifikat2-BfTQyCtw.png" alt="" />
+                    <img src="/About/sertifikat2-BfTQyCtw.png" alt="" />
                   </div>
                   <div className="box">
-                    <img src="public/About/sertifikat4-C_micJnq.png" alt="" />
+                    <img src="/About/sertifikat4-C_micJnq.png" alt="" />
                   </div>
                   <div className="box">
-                    <img src="public/About/ertifikat3-CwOaJh6o.png" alt="" />
+                    <img src="/About/ertifikat3-CwOaJh6o.png" alt="" />
                   </div>
                 </div>
                 

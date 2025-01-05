@@ -26,31 +26,31 @@ const Main = () => {
           <div className="marque-left">
             <Marquee speed={50} direction="left" gradient={false}>
               <div className="marquee">
-                <img src="public/maque-left/1-DPymZrpy.jpg" alt="" />
+                <img src="maque-left/1-DPymZrpy.jpg" alt="" />
               </div>
               <div className="marquee">
-                <img src="public/maque-left/2-BrW5ldnW.jpg" alt="" />
+                <img src="maque-left/2-BrW5ldnW.jpg" alt="" />
               </div>
               <div className="marquee">
-                <img src="public/maque-left/3-CC1Fv5Ko.jpg" alt="" />
+                <img src="maque-left/3-CC1Fv5Ko.jpg" alt="" />
               </div>
               <div className="marquee">
-                <img src="public/maque-left/4-B1ud6FZe.jpg" alt="" />
+                <img src="maque-left/4-B1ud6FZe.jpg" alt="" />
               </div>
               <div className="marquee">
-                <img src="public/maque-left/5-DgqT6XoF.jpg" alt="" />
+                <img src="maque-left/5-DgqT6XoF.jpg" alt="" />
               </div>
               <div className="marquee">
-                <img src="public/maque-left/6-Cc5vAtLH.jpg" alt="" />
+                <img src="maque-left/6-Cc5vAtLH.jpg" alt="" />
               </div>
               <div className="marquee">
-                <img src="public/maque-left/7-Dg9MnOAk.jpg" alt="" />
+                <img src="maque-left/7-Dg9MnOAk.jpg" alt="" />
               </div>
               <div className="marquee">
-                <img src="public/maque-left/8-1IjexHLz.jpg" alt="" />
+                <img src="maque-left/8-1IjexHLz.jpg" alt="" />
               </div>
               <div className="marquee">
-                <img src="public/maque-left/9-VXZ4ZmsG.jpg" alt="" />
+                <img src="maque-left/9-VXZ4ZmsG.jpg" alt="" />
               </div>
             </Marquee>
           </div>
@@ -63,31 +63,31 @@ const Main = () => {
               // play={play}
             >
               <div className="marquee">
-                <img src="public/maque-left/1-DPymZrpy.jpg" alt="" />
+                <img src="maque-left/1-DPymZrpy.jpg" alt="" />
               </div>
               <div className="marquee">
-                <img src="public/maque-left/2-BrW5ldnW.jpg" alt="" />
+                <img src="maque-left/2-BrW5ldnW.jpg" alt="" />
               </div>
               <div className="marquee">
-                <img src="public/maque-left/3-CC1Fv5Ko.jpg" alt="" />
+                <img src="maque-left/3-CC1Fv5Ko.jpg" alt="" />
               </div>
               <div className="marquee">
-                <img src="public/maque-left/4-B1ud6FZe.jpg" alt="" />
+                <img src="maque-left/4-B1ud6FZe.jpg" alt="" />
               </div>
               <div className="marquee">
-                <img src="public/maque-left/5-DgqT6XoF.jpg" alt="" />
+                <img src="maque-left/5-DgqT6XoF.jpg" alt="" />
               </div>
               <div className="marquee">
-                <img src="public/maque-left/6-Cc5vAtLH.jpg" alt="" />
+                <img src="maque-left/6-Cc5vAtLH.jpg" alt="" />
               </div>
               <div className="marquee">
-                <img src="public/maque-left/7-Dg9MnOAk.jpg" alt="" />
+                <img src="maque-left/7-Dg9MnOAk.jpg" alt="" />
               </div>
               <div className="marquee">
-                <img src="public/maque-left/8-1IjexHLz.jpg" alt="" />
+                <img src="maque-left/8-1IjexHLz.jpg" alt="" />
               </div>
               <div className="marquee">
-                <img src="public/maque-left/9-VXZ4ZmsG.jpg" alt="" />
+                <img src="maque-left/9-VXZ4ZmsG.jpg" alt="" />
               </div>
             </Marquee>
           </div>

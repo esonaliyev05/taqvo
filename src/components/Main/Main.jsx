@@ -1,9 +1,90 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Main.scss";
 import Swiper from "../SwiperMain/Swiper";
 import Marquee from "react-fast-marquee";
 
 const Main = () => {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    surname: "",
+    phone: "",
+    username: "",
+    region: "",
+    service: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+
+  const handler = () => {
+    e.target.preventDefault();
+    setIsSubmitting(true);
+  };
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const { name, phone, service } = formData;
+
+    if (!name || !phone || !service) {
+      alert("Iltimos, barcha majburiy maydonlarni to‘ldiring!");
+      // setStatus();
+      setIsSubmitting(false);
+      return;
+    }
+
+    const botToken = "7503841323:AAE2gFD76hfKiFh6KTEpqu4lL69HAWejKEE";
+    const chatId = "6992354984"; // Chat ID ni kiritishni unutmang
+    const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+    const text = `
+      📝 Yangi buyurtma:
+      🔹 Ism: ${formData.name}
+      🔹 Familiya: ${formData.surname}
+      🔹 Telefon: ${formData.phone}
+      🔹 Telegram: ${formData.username}
+      🔹 Hudud: ${formData.region}
+      🔹 Xizmat turi: ${formData.service}
+      🔹 Xabar: ${formData.message}
+    `;
+
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ chat_id: chatId, text }),
+      });
+
+      if (response.ok) {
+        alert("Xabar muvaffaqiyatli yuborildi!");
+        setStatus("Xabar muvaffaqiyatli yuborildi!");
+        setFormData({
+          name: "",
+          surname: "",
+          phone: "",
+          username: "",
+          region: "",
+          service: "",
+          message: "",
+        });
+      } else {
+        setStatus("Xatolik yuz berdi, qayta urinib ko‘ring.");
+        alert("Xatolik yuz berdi, qayta urinib ko‘ring.");
+      }
+    } catch (error) {
+      setStatus(`Server xatosi: ${error.message}`);
+    } finally{
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       <main>
@@ -116,13 +197,13 @@ const Main = () => {
             </div>
 
             <div className="form">
-              <form>
-                <input type="text" placeholder="Ismingiz" />
-                <input type="text" placeholder="Familyangiz" />
-                <input type="text" placeholder="Telefon Raqamingiz" />
-                <input type="text" placeholder="Telegram username" />
-                <input type="text" placeholder="Hudud" />
-                <select name="service">
+              <form onSubmit={handleSubmit}>
+                <input type="text" name="name" placeholder="Ismingiz" value={formData.name}  onChange={handleInputChange}/>
+                <input type="text" name="surname" placeholder="Familyangiz" value={formData.surname} onChange={handleInputChange} />
+                <input type="text" name="phone" placeholder="Telefon Raqamingiz" value={formData.phone}   onChange={handleInputChange}/>
+                <input type="text" name="username" placeholder="Telegram username" value={formData.username}   onChange={handleInputChange}/>
+                <input type="text" name="region" placeholder="Hudud" value={formData.region}   onChange={handleInputChange}/>
+                <select name="service" value={formData.service} onChange={handleInputChange}  >
                   <option value="" disabled>
                     Xizmat turini tanlang
                   </option>
@@ -130,9 +211,11 @@ const Main = () => {
                   <option value="Франшиза">Франшиза</option>
                 </select>
 
-                <textarea placeholder="Xabar"></textarea>
+                <textarea placeholder="Xabar" name="message" value={formData.message} onChange={handleInputChange}  ></textarea>
 
-                <button type="submit">Yuborish</button>
+                <button type="submit" onClick={handler} disabled={isSubmitting}>
+                {isSubmitting ? "Yuborilmoqda..." : "Yuborish"}
+                </button>
               </form>
             </div>
           </div>

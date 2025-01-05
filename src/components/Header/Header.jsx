@@ -110,7 +110,7 @@ const Header = () => {
                 <img src="/Header/logo-BftKQ4bE.png" alt="Logo" />
               </div>
               <div className="concat-text">
-                <h2>Buyurtma</h2>
+                <h2>{t("Buyurtma")}</h2>
               </div>
             </div>
           </div>
@@ -126,35 +126,35 @@ const Header = () => {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Ismingiz"
+                  placeholder={t("Ismingiz")}
                   value={formData.name}
                   onChange={handleInputChange}
                 />
                 <input
                   type="text"
                   name="surname"
-                  placeholder="Familyangiz"
+                  placeholder={t("Familyangiz")}
                   value={formData.surname}
                   onChange={handleInputChange}
                 />
                 <input
                   type="number"
                   name="phone"
-                  placeholder="Telefon raqamingiz"
+                  placeholder={t("Telefon raqamingiz")}
                   value={formData.phone}
                   onChange={handleInputChange}
                 />
                 <input
                   type="text"
                   name="username"
-                  placeholder="Telegram username"
+                  placeholder={t("Telegram username")}
                   value={formData.username}
                   onChange={handleInputChange}
                 />
                 <input
                   type="text"
                   name="region"
-                  placeholder="Hudud"
+                  placeholder={t("Hudud")}
                   value={formData.region}
                   onChange={handleInputChange}
                 />
@@ -164,19 +164,20 @@ const Header = () => {
                   onChange={handleInputChange}
                 >
                   <option value="" disabled>
-                    Xizmat turini tanlang
+                   {t(" Xizmat turini tanlang")}
                   </option>
-                  <option value="Продукт">Продукт</option>
-                  <option value="Франшиза">Франшиза</option>
+                  <option value="Продукт">{t("Mahsulot")}
+</option>
+                  <option value="Франшиза">{t("Franshiza")}</option>
                 </select>
                 <textarea
                   name="message"
-                  placeholder="Xabar"
+                  placeholder={t("Xabar")}
                   value={formData.message}
                   onChange={handleInputChange}
                 ></textarea>
                 <button type="submit" onClick={handler}>
-                  Yuborish
+                  {t("Yuborish")}
                 </button>
               </form>
               {status && <p style={{ color: "red" }}>{status}</p>}

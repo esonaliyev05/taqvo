@@ -1,8 +1,25 @@
 {
-    "Bosh sahifa": "Home",
-    "Biz haqimizda": "About Us",
-    "Bog'lanish": "Contact",
-    "AQVO – O‘zbekistonda birinchi bo‘lib sifat va halollikni o‘zida mujassam etgan, jiz mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi yetakchi brend.": "AQVO is the first brand in Uzbekistan that embodies quality and integrity, presenting juice products with a new taste and modern design.",
-    "Tabiiy mahsulotlar! Sifat va ishonch! Tabiiy mahsulotlar! Sifat va ishonch!": "Natural products! Quality and trust! Natural products! Quality and trust!"
-  }
-  
+  "Bosh sahifa": "Home",
+  "Biz haqimizda": "About Us",
+  "Bog'lanish": "Contact",
+  "AQVO – O‘zbekistonda birinchi bo‘lib sifat va halollikni o‘zida mujassam etgan, jiz mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi yetakchi brend.": "AQVO is the first brand in Uzbekistan that embodies quality and integrity, presenting juice products with a new taste and modern design.",
+  "Tabiiy mahsulotlar! Sifat va ishonch! Tabiiy mahsulotlar! Sifat va ishonch!": "Natural products! Quality and trust! Natural products! Quality and trust!",
+  "Buyurtma": "Order",
+  "Ismingiz": "Your Name",
+  "Familyangiz": "Your Last Name",
+  "Telefon raqamingiz": "Your Phone Number",
+  "Telegram username": "Telegram Username",
+  "Hudud": "Region",
+  "service": "Service",
+  "Xizmat turini tanlang": "Select Service Type",
+  "Franshiza": "Franchise",
+  "Mahsulot": "Product",
+  "Xabar": "Message",
+  "Yuborish": "Send",
+  "Aqvo brendi haqida": "About the Aqvo brand",
+  "Aqvo – sifat va halollikni o‘zida mujassam etgan, innovatsion yondashuv orqali mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi brend. O‘zbekistonda birinchi bo‘lib jiz mahsulotlarini yuqori sifat va halollik tamoyillariga asoslangan holda ishlab chiqarishni yo‘lga qo‘ygan Aqvo, mijozlar ishonchini qozonib kelmoqda.": "Aqvo is a brand that embodies quality and honesty, presenting its products with a new taste and modern design through an innovative approach. Aqvo became the first brand in Uzbekistan to establish the production of jiz products based on the principles of high quality and honesty, gaining the trust of customers.",
+  "Mahsulot turlari": "Types of products",
+  "Aqvo brendi hozirda mol go‘shtli, tovuq go‘shtli va qo‘y go‘shtli mahsulotlar bilan iste’molchilarga xizmat ko‘rsatmoqda. Har bir mahsulotimiz o‘ziga xos yuqori sifat, yangicha ta’m va halollik tamoyillariga asoslangan holda ishlab chiqariladi. Aqvo – bu mazali va ishonchli mahsulotlarning yorqin timsoli.": "The Aqvo brand is currently serving consumers with beef, chicken, and lamb meat products. Each of our products is manufactured based on distinct high quality, new taste, and honesty principles. Aqvo is a bright symbol of delicious and reliable products.",
+  "Yetkazib berish ko‘lami": "Delivery Scope",
+  "Aqvo brendi o‘z mahsulotlarini keng hududlarga yetkazib berishni tashkil etib, sifat va tezkorlikni birinchi o‘ringa qo‘yadi. Bizning yetkazib berish tarmog‘imiz orqali mahsulotlar O‘zbekistonning barcha hududlariga o‘z vaqtida yetib boradi. Aqvo – har doim sizga yaqin, har doim ishonchli.": "The Aqvo brand organizes the delivery of its products to a wide region, prioritizing quality and speed. Through our delivery network, products reach all regions of Uzbekistan on time. Aqvo – always close to you, always reliable."
+}

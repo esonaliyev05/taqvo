@@ -2,9 +2,16 @@ import React, { useState } from "react";
 import "./Header.scss";
 import Marquee from "react-fast-marquee";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+
+  const HandelChange = (newLanguage) => {
+    i18n.changeLanguage(newLanguage);
+  }
+
   const [formData, setFormData] = useState({
     name: "",
     surname: "",
@@ -87,16 +94,14 @@ const Header = () => {
       <div className="container">
 
       <Marquee className="Marque">
-         <h1>Tabiiy mahsulotlar! Sifat va ishonch! Tabiiy mahsulotlar! Sifat va ishonch!</h1>
+         <h1> {t( "Tabiiy mahsulotlar! Sifat va ishonch! Tabiiy mahsulotlar! Sifat va ishonch!")} </h1>
         </Marquee>
 
 
         <div className="header-parent">
           <div className="text">
             <p>
-              AQVO – O‘zbekistonda birinchi bo‘lib sifat va halollikni o‘zida
-              mujassam etgan, jiz mahsulotlarini yangicha ta’m va zamonaviy
-              dizaynda taqdim etuvchi yetakchi brend.
+             {t("AQVO – O‘zbekistonda birinchi bo‘lib sifat va halollikni o‘zida mujassam etgan, jiz mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi yetakchi brend.")}
             </p>
           </div>
           <div className="concat" onClick={handleOpen}>

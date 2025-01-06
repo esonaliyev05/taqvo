@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Main.scss";
 import Swiper from "../SwiperMain/Swiper";
 import Marquee from "react-fast-marquee";
-
+import { useTranslation } from "react-i18next";
 const Main = () => {
 
   const [formData, setFormData] = useState({
@@ -17,6 +17,12 @@ const Main = () => {
   const [status, setStatus] = useState("");
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+   
+  const { t, i18n } = useTranslation();
+
+  const HandelChange = (newLanguage) => {
+    i18n.changeLanguage(newLanguage);
+  }
 
 
   const handler = () => {
@@ -93,14 +99,14 @@ const Main = () => {
         <div className="main-section">
           <div className="section-text">
             <h1>
-              SIZNING AQVO BILAN <br /> LAHZALARINGIZ
+             {t("SIZNING AQVO BILAN LAHZALARINGIZ")}
             </h1>
 
             <img src="/Nav-logo/a7a74a802a650e351373ebac10d99ef7.png" alt="" />
 
             <div className="btn">
-              <button>Bizning Instagram</button>
-              <button>Bizning Telegram</button>
+              <button>{t("Bizning Instagram")}</button>
+              <button>{t("Bizning Telegram")}</button>
             </div>
           </div>
 
@@ -177,19 +183,14 @@ const Main = () => {
         <div className="main-container">
           <div className="container">
             <div className="main-text">
-              <h1>"AQVO" bilan yangicha ta’mni his eting.</h1>
+              <h1>{t("AQVO bilan yangicha ta’mni his eting.")}</h1>
 
               <p>
-                Aqvo brendi sizni yangi ta'mlarni kashf etishga taklif qiladi.
-                Bizning mahsulotlarimiz har bir iste’molchiga sifatli va
-                innovatsion yondashuv orqali yangi, o‘ziga xos ta’mni taqdim
-                etadi. Aqvo – bu nafaqat ta’m, balki sog‘lom va halol
-                mahsulotlar bilan yangi tajribani his qilish imkoniyati. Yangi
-                ta’mni biz bilan birga kashf eting va haqiqiy sifatni his eting!
+               {t("Aqvo brendi sizni yangi ta'mlarni kashf etishga taklif qiladi. Bizning mahsulotlarimiz har bir iste’molchiga sifatli va innovatsion yondashuv orqali yangi, o‘ziga xos ta’mni taqdim etadi. Aqvo – bu nafaqat ta’m, balki sog‘lom va halol mahsulotlar bilan yangi tajribani his qilish imkoniyati. Yangi ta’mni biz bilan birga kashf eting va haqiqiy sifatni his eting!")}
               </p>
 
               <ul>
-                <p>Bog‘lanish uchun telefon raqamlarimiz:</p>
+                <p>{t("Bog‘lanish uchun telefon raqamlarimiz:")}</p>
 
                 <a href="">Tel: +998957724444</a>
                 <a href="">Tel: +998996440101</a>
@@ -198,23 +199,23 @@ const Main = () => {
 
             <div className="form">
               <form onSubmit={handleSubmit}>
-                <input type="text" name="name" placeholder="Ismingiz" value={formData.name}  onChange={handleInputChange}/>
-                <input type="text" name="surname" placeholder="Familyangiz" value={formData.surname} onChange={handleInputChange} />
-                <input type="text" name="phone" placeholder="Telefon Raqamingiz" value={formData.phone}   onChange={handleInputChange}/>
-                <input type="text" name="username" placeholder="Telegram username" value={formData.username}   onChange={handleInputChange}/>
-                <input type="text" name="region" placeholder="Hudud" value={formData.region}   onChange={handleInputChange}/>
-                <select name="service" value={formData.service} onChange={handleInputChange}  >
+                <input type="text" name="name" placeholder={t("Ismingiz")} value={formData.name}  onChange={handleInputChange}/>
+                <input type="text" name="surname" placeholder={t("Familyangiz")} value={formData.surname} onChange={handleInputChange} />
+                <input type="text" name="phone" placeholder={t("Telefon Raqamingiz")} value={formData.phone}   onChange={handleInputChange}/>
+                <input type="text" name="username" placeholder={t("Telegram username")} value={formData.username}   onChange={handleInputChange}/>
+                <input type="text" name="region" placeholder={t("Hudud")} value={formData.region}   onChange={handleInputChange}/>
+                <select name={t("service")} value={formData.service} onChange={handleInputChange}  >
                   <option value="" disabled>
                     Xizmat turini tanlang
                   </option>
-                  <option value="Продукт">Продукт</option>
-                  <option value="Франшиза">Франшиза</option>
+                  <option value={t("Продукт")}>Продукт</option>
+                  <option value={t("Франшиза")}>Франшиза</option>
                 </select>
 
-                <textarea placeholder="Xabar" name="message" value={formData.message} onChange={handleInputChange}  ></textarea>
+                <textarea placeholder={t("Xabar")} name="message" value={formData.message} onChange={handleInputChange}  ></textarea>
 
                 <button type="submit" onClick={handler} disabled={isSubmitting}>
-                {isSubmitting ? "Yuborilmoqda..." : "Yuborish"}
+                {isSubmitting ? "Yuborilmoqda..." : t("Yuborish")}
                 </button>
               </form>
             </div>
@@ -223,7 +224,7 @@ const Main = () => {
 
         <div className="main-countres">
           <div className="container">
-            <h1>BIZNING SERTIFIKATLARIMIZ</h1>
+            <h1>{t("BIZNING SERTIFIKATLARIMIZ")}</h1>
 
             <div className="boxses">
               <div className="box">

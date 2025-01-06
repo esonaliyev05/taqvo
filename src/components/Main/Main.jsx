@@ -110,7 +110,7 @@ const Main = () => {
             <img src="/Nav-logo/a7a74a802a650e351373ebac10d99ef7.png" alt="" />
 
             <div className="btn">
-              <button onClick={() => handleRedirect("https://www.instagram.com/esonaliyev_alyorbek/profilecard/?igsh=NWd0OXl0YXFveDU1")}>{t("Bizning Instagram")}</button>
+              <button onClick={() => handleRedirect("https://www.instagram.com/aqvo_jiz/")}>{t("Bizning Instagram")}</button>
               <button onClick={() => handleRedirect("https://t.me/Alyorbek_Blog")} >{t("Bizning Telegram")}</button>
             </div>
           </div>

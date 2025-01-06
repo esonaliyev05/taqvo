@@ -10,6 +10,7 @@ const Footer = () => {
   const HandelChange = (newLanguage) => {
     i18n.changeLanguage(newLanguage);
   }
+  
   return (
     <>
      <footer>
@@ -19,8 +20,8 @@ const Footer = () => {
                          <p>{t("Siz izlagan ta’m, sifat, poklik va o‘zgachalik... Barchasi bir nuqtada jamlanib, “Aqvo”'ga aylanadi!")}</p>
 
                          <div className="icon">
-                            <a href=""><BsInstagram/></a>
-                            <a href=""><TbBrandTelegram/></a>
+                            <a href="https://www.instagram.com/aqvo_jiz/"><BsInstagram/></a>
+                            <a href="https://t.me/Alyorbek_Blog"><TbBrandTelegram/></a>
                          </div>
                          
                          <p>© {t("Barcha huquqlar himoyalangan")}</p>

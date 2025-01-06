@@ -26,7 +26,7 @@ const Footer = () => {
                          <p>© {t("Barcha huquqlar himoyalangan")}</p>
 
                  </div>
-      </div>
+              </div>
      </footer>
     </>
   )

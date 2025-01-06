@@ -206,7 +206,7 @@ const Main = () => {
               <form onSubmit={handleSubmit}>
                 <input type="text" name="name" placeholder={t("Ismingiz")} value={formData.name}  onChange={handleInputChange}/>
                 <input type="text" name="surname" placeholder={t("Familyangiz")} value={formData.surname} onChange={handleInputChange} />
-                <input type="text" name="phone" placeholder={t("Telefon Raqamingiz")} value={formData.phone}   onChange={handleInputChange}/>
+                <input type="text" name="phone" placeholder={t("Telefon raqamingiz")} value={formData.phone}   onChange={handleInputChange}/>
                 <input type="text" name="username" placeholder={t("Telegram username")} value={formData.username}   onChange={handleInputChange}/>
                 <input type="text" name="region" placeholder={t("Hudud")} value={formData.region}   onChange={handleInputChange}/>
                 <select name={t("service")} value={formData.service} onChange={handleInputChange}  >

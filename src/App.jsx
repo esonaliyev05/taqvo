@@ -38,7 +38,7 @@ function App() {
       <BrowserRouter>
         {loading ? ( // Agar loading true bo'lsa, spinner ko'rsatiladi
           <div className="loader-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-            <RingLoader size={100} color="#36D7B7" />
+            <RingLoader size={100} color="#991b1b" />
           </div>
         ) : contentLoaded ? ( // Agar kontent yuklanishi tugagan bo'lsa
           <>

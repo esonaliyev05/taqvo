@@ -211,7 +211,7 @@ const Main = () => {
                 <input type="text" name="region" placeholder={t("Hudud")} value={formData.region}   onChange={handleInputChange}/>
                 <select name={t("service")} value={formData.service} onChange={handleInputChange}  >
                   <option value="" disabled>
-                   {t(" Xizmat turini tanlang")}
+                   {t("Xizmat turini tanlang")}
                   </option>
                   <option value="Продукт">{t("Mahsulot")}</option>
                   <option value="Франшиза">{t("Franshiza")}</option>

@@ -10,6 +10,7 @@ function App() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(true); // Saytni yuklanishini tekshirish uchun holat
+  const [contentLoaded, setContentLoaded] = useState(false); // Kontentning yuklanishini nazorat qilish uchun
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
@@ -23,10 +24,13 @@ function App() {
     setOpen(true); 
   };
 
-  // useEffect yordamida sayt yuklangach, loading holatini o'zgartiramiz
+  // useEffect bilan saytni yuklash va kutish jarayonini boshqarish
   useEffect(() => {
-    // Sayt yuklanishi tugagach loading ni false ga o'zgartiramiz
-    window.onload = () => setLoading(false);
+    //  Sayt yuklanganidan keyin 1 soniya kutish
+    setTimeout(() => {
+      setLoading(false); // Yuklanish tugadi
+      setContentLoaded(true); // Kontentni ko'rsatish
+    }, 2000); // 2 soniya kutish (mobil qurilmada tekshirish uchun bu vaqtni biroz uzaytirish mumkin)
   }, []);
 
   return (
@@ -36,7 +40,7 @@ function App() {
           <div className="loader-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
             <RingLoader size={100} color="#36D7B7" />
           </div>
-        ) : (
+        ) : contentLoaded ? ( // Agar kontent yuklanishi tugagan bo'lsa
           <>
             <Navbar handleOpen={handleOpen} toggleSidebar={toggleSidebar}/>
             <Routes>
@@ -45,6 +49,10 @@ function App() {
             </Routes>
             <Footer />
           </>
+        ) : ( // Agar 2 soniya kutish davom etsa
+          <div className="loading-overlay" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+            <RingLoader size={100} color="#36D7B7" />
+          </div>
         )}
       </BrowserRouter>
     </>

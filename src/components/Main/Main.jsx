@@ -238,17 +238,17 @@ const Main = () => {
       value={formData.region}
       onChange={handleInputChange}
     />
-    <select
-      name="service"
-      value={formData.service}
-      onChange={handleInputChange}
-    >
-      <option value="" disabled>
-        {t("Xizmat turini tanlang")}
-      </option>
-      <option value="Mahsulot">{t("Mahsulot")}</option>
-      <option value="Franshiza">{t("Franshiza")}</option>
-    </select>
+     <select
+                  name="service"
+                  value={formData.service}
+                  onChange={handleInputChange}
+                >
+                  <option value="" disabled>
+                    {t("Xizmat turini tanlang")}
+                  </option>
+                  <option value="Продукт">{t("Mahsulot")}</option>
+                  <option value="Франшиза">{t("Franshiza")}</option>
+                </select>
     <textarea
       placeholder={t("Xabar")}
       name="message"

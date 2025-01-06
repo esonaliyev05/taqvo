@@ -201,29 +201,66 @@ const Main = () => {
                 <a href="">Tel: +998996440101</a>
               </ul>
             </div>
-
             <div className="form">
-              <form onSubmit={handleSubmit}>
-                <input type="text" name="name" placeholder={t("Ismingiz")} value={formData.name}  onChange={handleInputChange}/>
-                <input type="text" name="surname" placeholder={t("Familyangiz")} value={formData.surname} onChange={handleInputChange} />
-                <input type="text" name="phone" placeholder={t("Telefon raqamingiz")} value={formData.phone}   onChange={handleInputChange}/>
-                <input type="text" name="username" placeholder={t("Telegram username")} value={formData.username}   onChange={handleInputChange}/>
-                <input type="text" name="region" placeholder={t("Hudud")} value={formData.region}   onChange={handleInputChange}/>
-                <select name={t("service")} value={formData.service} onChange={handleInputChange}  >
-                  <option value="" disabled>
-                   {t("Xizmat turini tanlang")}
-                  </option>
-                  <option value="Продукт">{t("Mahsulot")}</option>
-                  <option value="Франшиза">{t("Franshiza")}</option>
-                </select>
+  <form onSubmit={handleSubmit}>
+    <input
+      type="text"
+      name="name"
+      placeholder={t("Ismingiz")}
+      value={formData.name}
+      onChange={handleInputChange}
+    />
+    <input
+      type="text"
+      name="surname"
+      placeholder={t("Familyangiz")}
+      value={formData.surname}
+      onChange={handleInputChange}
+    />
+    <input
+      type="text"
+      name="phone"
+      placeholder={t("Telefon raqamingiz")}
+      value={formData.phone}
+      onChange={handleInputChange}
+    />
+    <input
+      type="text"
+      name="username"
+      placeholder={t("Telegram username")}
+      value={formData.username}
+      onChange={handleInputChange}
+    />
+    <input
+      type="text"
+      name="region"
+      placeholder={t("Hudud")}
+      value={formData.region}
+      onChange={handleInputChange}
+    />
+    <select
+      name="service"
+      value={formData.service}
+      onChange={handleInputChange}
+    >
+      <option value="" disabled>
+        {t("Xizmat turini tanlang")}
+      </option>
+      <option value="Mahsulot">{t("Mahsulot")}</option>
+      <option value="Franshiza">{t("Franshiza")}</option>
+    </select>
+    <textarea
+      placeholder={t("Xabar")}
+      name="message"
+      value={formData.message}
+      onChange={handleInputChange}
+    ></textarea>
+    <button type="submit" disabled={isSubmitting}>
+      {isSubmitting ? t("Yuborilmoqda...") : t("Yuborish")}
+    </button>
+  </form>
+</div>
 
-                <textarea placeholder={t("Xabar")} name="message" value={formData.message} onChange={handleInputChange}  ></textarea>
-
-                <button type="submit" onClick={handler} disabled={isSubmitting}>
-                {isSubmitting ? "Yuborilmoqda..." : t("Yuborish")}
-                </button>
-              </form>
-            </div>
           </div>
         </div>
 

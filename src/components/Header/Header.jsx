@@ -8,11 +8,9 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const { t, i18n } = useTranslation();
 
- 
-
   const HandelChange = (newLanguage) => {
     i18n.changeLanguage(newLanguage);
-  }
+  };
 
   const [formData, setFormData] = useState({
     name: "",
@@ -91,19 +89,22 @@ const Header = () => {
 
   return (
     <div className="header">
-
-
       <div className="container">
-
-      <Marquee className="Marque">
-         <h1> {t( "Tabiiy mahsulotlar! Sifat va ishonch! Tabiiy mahsulotlar! Sifat va ishonch!")} </h1>
+        <Marquee className="Marque">
+          <h1>
+            {" "}
+            {t(
+              "Tabiiy mahsulotlar! Sifat va ishonch! Tabiiy mahsulotlar! Sifat va ishonch!"
+            )}{" "}
+          </h1>
         </Marquee>
-
 
         <div className="header-parent">
           <div className="text">
             <p>
-             {t("AQVO – O‘zbekistonda birinchi bo‘lib sifat va halollikni o‘zida mujassam etgan, jiz mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi yetakchi brend.")}
+              {t(
+                "AQVO – O‘zbekistonda birinchi bo‘lib sifat va halollikni o‘zida mujassam etgan, jiz mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi yetakchi brend."
+              )}
             </p>
           </div>
           <div className="concat" onClick={handleOpen}>
@@ -166,10 +167,9 @@ const Header = () => {
                   onChange={handleInputChange}
                 >
                   <option value="" disabled>
-                   {t(" Xizmat turini tanlang")}
+                    {t(" Xizmat turini tanlang")}
                   </option>
-                  <option value="Продукт">{t("Mahsulot")}
-</option>
+                  <option value="Продукт">{t("Mahsulot")}</option>
                   <option value="Франшиза">{t("Franshiza")}</option>
                 </select>
                 <textarea

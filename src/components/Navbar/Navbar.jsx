@@ -13,6 +13,10 @@ const Navbar = ({ handleOpen }) => {
   const HandelChange = (newLanguage) => {
     i18n.changeLanguage(newLanguage);
   }
+  
+  const handeltop = () => {
+    window.scrollTo(50, 15);
+  }
 
   return (
     <div className='nav'>
@@ -24,7 +28,10 @@ const Navbar = ({ handleOpen }) => {
         </ul>
 
         <div className="logo">
+          <NavLink to={"/"}  onClick={handeltop}>
+
           <img src="/Nav-logo/a7a74a802a650e351373ebac10d99ef7.png" alt="" />
+          </NavLink>
         </div>
 
         <div className="concat">

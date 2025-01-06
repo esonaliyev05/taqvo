@@ -91,6 +91,11 @@ const Main = () => {
     }
   };
 
+  const handleRedirect = (url) => {
+    window.location.href = url;
+  };
+
+
   return (
     <>
       <main>
@@ -105,8 +110,8 @@ const Main = () => {
             <img src="/Nav-logo/a7a74a802a650e351373ebac10d99ef7.png" alt="" />
 
             <div className="btn">
-              <button>{t("Bizning Instagram")}</button>
-              <button>{t("Bizning Telegram")}</button>
+              <button onClick={() => handleRedirect("https://www.instagram.com/esonaliyev_alyorbek/profilecard/?igsh=NWd0OXl0YXFveDU1")}>{t("Bizning Instagram")}</button>
+              <button onClick={() => handleRedirect("https://t.me/Alyorbek_Blog")} >{t("Bizning Telegram")}</button>
             </div>
           </div>
 
@@ -206,10 +211,10 @@ const Main = () => {
                 <input type="text" name="region" placeholder={t("Hudud")} value={formData.region}   onChange={handleInputChange}/>
                 <select name={t("service")} value={formData.service} onChange={handleInputChange}  >
                   <option value="" disabled>
-                    Xizmat turini tanlang
+                   {t(" Xizmat turini tanlang")}
                   </option>
-                  <option value={t("Продукт")}>Продукт</option>
-                  <option value={t("Франшиза")}>Франшиза</option>
+                  <option value="Продукт">{t("Mahsulot")}</option>
+                  <option value="Франшиза">{t("Franshiza")}</option>
                 </select>
 
                 <textarea placeholder={t("Xabar")} name="message" value={formData.message} onChange={handleInputChange}  ></textarea>

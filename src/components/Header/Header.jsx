@@ -4,8 +4,8 @@ import Marquee from "react-fast-marquee";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
 
-const Header = () => {
-  const [open, setOpen] = useState(false);
+const Header = ({ open, handleClose , handleOpen }) => {
+  // const [open, setOpen] = useState(false);
   const { t, i18n } = useTranslation();
 
   const HandelChange = (newLanguage) => {
@@ -23,8 +23,8 @@ const Header = () => {
   });
   const [status, setStatus] = useState("");
 
-  const handleClose = () => setOpen(false);
-  const handleOpen = () => setOpen(true);
+  // const handleClose = () => setOpen(false);
+  // const handleOpen = () => setOpen(true);
   const handler = () => {
     e.target.preventDefault();
   };

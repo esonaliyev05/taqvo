@@ -57,6 +57,7 @@ const Header = ({ open, handleClose , handleOpen }) => {
       🔹 Hudud: ${formData.region}
       🔹 Xizmat turi: ${formData.service}
       🔹 Xabar: ${formData.message}
+      
     `;
 
     try {

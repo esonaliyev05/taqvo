@@ -46,11 +46,11 @@ const Navbar = ({ handleOpen }) => {
 
       </div>
 
-      <div className={bars ? "bars-open activ" : "bars-open"}>
+      <div className={bars ? "bars-open activ" : "bars-open"}  onClick={() => setBars(false)}>
         <div className="edit" onClick={() => setBars(false)}><AiOutlineCloseCircle />
         </div>
 
-        <div className="bars-parent">
+        <div className="bars-parent" onClick={(e) => e.stopPropagation()} >
           <div className="logo">
             <img src="/Nav-logo/a7a74a802a650e351373ebac10d99ef7.png" alt="" />
           </div>
